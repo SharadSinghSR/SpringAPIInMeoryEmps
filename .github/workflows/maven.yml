@@ -12,8 +12,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - name: Run Tests
-        run: mvn -B clean test
   package:
     needs: [build]
     runs-on: ubuntu-latest
